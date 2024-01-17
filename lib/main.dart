@@ -30,11 +30,11 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage>  {
   int _counter = 0;
 
   void _incrementCounter() {
-    setState(() {
+    setState((){
       _counter++;
     });
   }
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
-      ),
+      ) ,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
